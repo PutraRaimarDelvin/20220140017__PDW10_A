@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>DOM Javascript</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h3>Pendaftaran Peminatan</h3>
+    </div>
+    <form action="">
+        <label for="nama">Nama</label>
+        <input type="text" placeholder="Nama anda" id="nama">
+
+        <label for="nim">NIM</label>
+        <input type="text" placeholder="NIM anda" id="nim">
+
+        <p>Peminatan pada bidang:</p>
+        <div id="bidang-buttons">
+            <button type="button" class="bidang" data-value="programming">Programming</button>
+            <button type="button" class="bidang" data-value="desain">Desain</button>
+            <button type="button" class="bidang" data-value="jaringan">Jaringan</button>
+            <button type="button" class="bidang" data-value="data">Data</button>
+        </div>
+
+        <input type="hidden" id="peminatan" name="peminatan" value="">
+
+        <label for="alamat">Alamat</label>
+        <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea>
+
+        <label for="angkatan">Angkatan/Tahun</label>
+        <select name="angkatan" id="angkatan">
+            <option value="2022">2019</option>
+            <option value="2022">2020</option>
+            <option value="2022">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+
+        <label for="tanggal">Tanggal</label>
+        <input type="date" id="tanggal" name="tanggal">
+
+        <button type="submit" onclick="kirimData(event)">Kirim</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+ 
